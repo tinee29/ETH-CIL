@@ -1,0 +1,179 @@
+2024-07-28 14:46:21 | utils | Setting seed 42
+2024-07-28 14:46:21 | StreetArtist | Device: cuda
+2024-07-28 14:46:21 | StreetArtist | Parameters used: Decoder channels: (256, 128, 64, 32, 16), Learning rate: 0.001, Batch size: 6, Encoder weights: imagenet, Encoder depth: 5, Classes: 1, In channels: 3, Patience: 11, Seed: 42, Number of epochs: 80, Activation: None
+2024-07-28 14:46:25 | StreetArtist | Training model: efficientnet-b4_unet++
+2024-07-28 14:46:25 | StreetArtist | Loading model weights from submission_weights/efficientnet-b4_unet++-finetuned.pt as it was already trained.
+2024-07-28 14:46:26 | UNetEncoder | Freezing encoder weights enc1, enc2
+2024-07-28 14:46:26 | StreetArtist | Training model: resnet50_unet
+2024-07-28 14:46:26 | StreetArtist | Loading model weights from submission_weights/resnet50_unet-finetuned.pt as it was already trained.
+2024-07-28 14:46:27 | StreetArtist | Training model: resnet50_deeplabv3+
+2024-07-28 14:46:27 | StreetArtist | Loading model weights from submission_weights/resnet50_deeplabv3+.pt as it was already trained.
+2024-07-28 14:46:28 | StreetArtist | Training model: resnet34_unet++
+2024-07-28 14:46:28 | StreetArtist | Loading model weights from submission_weights/resnet34_unet++.pt as it was already trained.
+2024-07-28 14:46:29 | StreetArtist | Training model: resnet50_unet++
+2024-07-28 14:46:29 | StreetArtist | Loading model weights from submission_weights/resnet50_unet++.pt as it was already trained.
+2024-07-28 14:46:30 | StreetArtist | Training model: xception_unet++
+2024-07-28 14:46:30 | StreetArtist | Loading model weights from submission_weights/xception_unet++.pt as it was already trained.
+2024-07-28 14:46:31 | StreetArtist | Training model: efficientnet-b4_unet++
+2024-07-28 14:46:31 | StreetArtist | Loading model weights from submission_weights/efficientnet-b4_unet++-finetuned.pt as it was already finetuned.
+2024-07-28 14:46:31 | UNetEncoder | Freezing encoder weights enc1, enc2
+2024-07-28 14:46:31 | StreetArtist | Training model: resnet50_unet
+2024-07-28 14:46:31 | StreetArtist | Loading model weights from submission_weights/resnet50_unet-finetuned.pt as it was already finetuned.
+2024-07-28 14:46:32 | StreetArtist | Training model: resnet50_deeplabv3+
+2024-07-28 14:46:32 | StreetArtist | Loading model weights from submission_weights/resnet50_deeplabv3+-finetuned.pt as it was already finetuned.
+2024-07-28 14:46:32 | StreetArtist | Skipping finetuning for resnet34_unet++
+2024-07-28 14:46:32 | StreetArtist | Skipping finetuning for resnet50_unet++
+2024-07-28 14:46:32 | StreetArtist | Skipping finetuning for xception_unet++
+2024-07-28 14:46:34 | UNetEncoder | Freezing encoder weights enc1, enc2
+2024-07-28 14:46:38 | StreetArtist | Training model: street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt
+2024-07-28 14:46:38 | StreetArtist | Training for 17 epochs with patience 3.
+2024-07-28 14:50:46 | utils | 	- loss = 0.22689747578599526
+  	- val_loss = 0.23167637983957926
+  	- acc = 0.9085554961712305
+  	- val_acc = 0.9112944536738925
+  	- patch_acc = 0.8700368493681646
+  	- val_patch_acc = 0.8795331848992242
+  	- f1 = 0.5103260086103296
+  	- val_f1 = 0.7327682905726962
+  	- patch_f1 = 0.7033785988811319
+  	- val_patch_f1 = 0.7827669183413187
+ 
+2024-07-28 14:50:46 | early_stopping | Best F1 Score increased (0.000000 --> 0.782767).
+2024-07-28 14:50:46 | early_stopping | Saving model to submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3-0.782767.pt
+2024-07-28 14:54:54 | utils | 	- loss = 0.1621008491754987
+  	- val_loss = 0.21742074688275656
+  	- acc = 0.9381489774198023
+  	- val_acc = 0.9181597762637668
+  	- patch_acc = 0.9255692098886912
+  	- val_patch_acc = 0.8991126683023241
+  	- f1 = 0.7225591538061622
+  	- val_f1 = 0.7691212031576369
+  	- patch_f1 = 0.8024886282345721
+  	- val_patch_f1 = 0.8131431341171265
+ 
+2024-07-28 14:54:54 | early_stopping | Best F1 Score increased (0.782767 --> 0.813143).
+2024-07-28 14:54:54 | early_stopping | Saving model to submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3-0.813143.pt
+2024-07-28 14:59:02 | utils | 	- loss = 0.15493554365998916
+  	- val_loss = 0.2633190428217252
+  	- acc = 0.9401578564225263
+  	- val_acc = 0.9209131333563063
+  	- patch_acc = 0.9282230757574998
+  	- val_patch_acc = 0.9079861111111112
+  	- f1 = 0.7335619890052854
+  	- val_f1 = 0.7477907207277086
+  	- patch_f1 = 0.8078598474500743
+  	- val_patch_f1 = 0.8070027232170105
+ 
+2024-07-28 14:59:02 | early_stopping | EarlyStopping counter: 1 out of 3
+2024-07-28 15:03:10 | utils | 	- loss = 0.15111744435120175
+  	- val_loss = 0.2108111869957712
+  	- acc = 0.9428022328678888
+  	- val_acc = 0.9260811607042948
+  	- patch_acc = 0.9324010080508603
+  	- val_patch_acc = 0.9117476873927646
+  	- f1 = 0.7450104833559226
+  	- val_f1 = 0.769676234987047
+  	- patch_f1 = 0.8186335495978821
+  	- val_patch_f1 = 0.8195370435714722
+ 
+2024-07-28 15:03:10 | early_stopping | Best F1 Score increased (0.813143 --> 0.819537).
+2024-07-28 15:03:10 | early_stopping | Saving model to submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3-0.819537.pt
+2024-07-28 15:07:19 | utils | 	- loss = 0.1451570976184297
+  	- val_loss = 0.22367862860361734
+  	- acc = 0.9449001043352462
+  	- val_acc = 0.9134755068355136
+  	- patch_acc = 0.9355849832978868
+  	- val_patch_acc = 0.9097222288449606
+  	- f1 = 0.7553167342002155
+  	- val_f1 = 0.7081094980239868
+  	- patch_f1 = 0.8275879437231836
+  	- val_patch_f1 = 0.8105513917075263
+ 
+2024-07-28 15:07:19 | early_stopping | EarlyStopping counter: 1 out of 3
+2024-07-28 15:11:27 | utils | 	- loss = 0.1453652764379068
+  	- val_loss = 0.202110988398393
+  	- acc = 0.9454931016186722
+  	- val_acc = 0.9257895482911004
+  	- patch_acc = 0.9354855882302495
+  	- val_patch_acc = 0.9126157495710585
+  	- f1 = 0.7551929218168477
+  	- val_f1 = 0.7811241149902344
+  	- patch_f1 = 0.8242194123054278
+  	- val_patch_f1 = 0.8271991411844889
+ 
+2024-07-28 15:11:27 | early_stopping | Best F1 Score increased (0.819537 --> 0.827199).
+2024-07-28 15:11:27 | early_stopping | Saving model to submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3-0.827199.pt
+2024-07-28 15:15:36 | utils | 	- loss = 0.1415606350673519
+  	- val_loss = 0.2042621738380856
+  	- acc = 0.9463442932558424
+  	- val_acc = 0.9272860354847379
+  	- patch_acc = 0.9373840441685597
+  	- val_patch_acc = 0.9140625066227384
+  	- f1 = 0.7591304084044377
+  	- val_f1 = 0.7786447008450826
+  	- patch_f1 = 0.8298777840064682
+  	- val_patch_f1 = 0.828310317463345
+ 
+2024-07-28 15:15:36 | early_stopping | Best F1 Score increased (0.827199 --> 0.828310).
+2024-07-28 15:15:36 | early_stopping | Saving model to submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3-0.828310.pt
+2024-07-28 15:19:45 | utils | 	- loss = 0.1464024218979455
+  	- val_loss = 0.19248271733522415
+  	- acc = 0.9454174412570837
+  	- val_acc = 0.9269318911764357
+  	- patch_acc = 0.9363271357448957
+  	- val_patch_acc = 0.9177276227209303
+  	- f1 = 0.7582691202636893
+  	- val_f1 = 0.7769531144036187
+  	- patch_f1 = 0.828972858782033
+  	- val_patch_f1 = 0.8375472293959724
+ 
+2024-07-28 15:19:45 | early_stopping | Best F1 Score increased (0.828310 --> 0.837547).
+2024-07-28 15:19:45 | early_stopping | Saving model to submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3-0.837547.pt
+2024-07-28 15:23:54 | utils | 	- loss = 0.1655701734552174
+  	- val_loss = 0.31158318287796444
+  	- acc = 0.9427494559124225
+  	- val_acc = 0.9029981891314188
+  	- patch_acc = 0.9308670019830456
+  	- val_patch_acc = 0.8917824096149869
+  	- f1 = 0.7417118020412576
+  	- val_f1 = 0.6505773199929131
+  	- patch_f1 = 0.8123275306616121
+  	- val_patch_f1 = 0.7497364547517564
+ 
+2024-07-28 15:23:54 | early_stopping | EarlyStopping counter: 1 out of 3
+2024-07-28 15:28:03 | utils | 	- loss = 0.14130661117609675
+  	- val_loss = 0.19834296653668085
+  	- acc = 0.9461142727891907
+  	- val_acc = 0.9262563520007663
+  	- patch_acc = 0.9372515168808798
+  	- val_patch_acc = 0.9128086434470283
+  	- f1 = 0.757068328161276
+  	- val_f1 = 0.7843681110276116
+  	- patch_f1 = 0.8297796377926382
+  	- val_patch_f1 = 0.83042487833235
+ 
+2024-07-28 15:28:03 | early_stopping | EarlyStopping counter: 2 out of 3
+2024-07-28 15:32:12 | utils | 	- loss = 0.13447672428691204
+  	- val_loss = 0.19114048613442314
+  	- acc = 0.9474909794694595
+  	- val_acc = 0.9278063509199355
+  	- patch_acc = 0.9400014665745596
+  	- val_patch_acc = 0.9157986177338494
+  	- f1 = 0.7662066636422208
+  	- val_f1 = 0.785286717944675
+  	- patch_f1 = 0.8363755770198261
+  	- val_patch_f1 = 0.8332973122596741
+ 
+2024-07-28 15:32:12 | early_stopping | EarlyStopping counter: 3 out of 3
+2024-07-28 15:32:12 | utils | Restoring best checkpoint: submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3-0.837547.pt with F1 score: 0.8375472293959724 after 10 epochs. Clearing checkpoint...
+2024-07-28 15:32:12 | utils | Finished Training with : 	- loss = 0.13447672428691204
+  	- val_loss = 0.19114048613442314
+  	- acc = 0.9474909794694595
+  	- val_acc = 0.9278063509199355
+  	- patch_acc = 0.9400014665745596
+  	- val_patch_acc = 0.9157986177338494
+  	- f1 = 0.7662066636422208
+  	- val_f1 = 0.785286717944675
+  	- patch_f1 = 0.8363755770198261
+  	- val_patch_f1 = 0.8332973122596741
+ 

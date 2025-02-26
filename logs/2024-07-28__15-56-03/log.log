@@ -1,0 +1,104 @@
+2024-07-28 15:56:04 | utils | Setting seed 42
+2024-07-28 15:56:04 | StreetArtist | Device: cuda
+2024-07-28 15:56:04 | StreetArtist | Parameters used: Decoder channels: (256, 128, 64, 32, 16), Learning rate: 0.001, Batch size: 6, Encoder weights: imagenet, Encoder depth: 5, Classes: 1, In channels: 3, Patience: 11, Seed: 42, Number of epochs: 80, Activation: None
+2024-07-28 15:56:08 | StreetArtist | Training model: efficientnet-b4_unet++
+2024-07-28 15:56:08 | StreetArtist | Loading model weights from submission_weights/efficientnet-b4_unet++-finetuned.pt as it was already trained.
+2024-07-28 15:56:09 | UNetEncoder | Freezing encoder weights enc1, enc2
+2024-07-28 15:56:09 | StreetArtist | Training model: resnet50_unet
+2024-07-28 15:56:09 | StreetArtist | Loading model weights from submission_weights/resnet50_unet-finetuned.pt as it was already trained.
+2024-07-28 15:56:11 | StreetArtist | Training model: resnet50_deeplabv3+
+2024-07-28 15:56:11 | StreetArtist | Loading model weights from submission_weights/resnet50_deeplabv3+.pt as it was already trained.
+2024-07-28 15:56:12 | StreetArtist | Training model: resnet34_unet++
+2024-07-28 15:56:12 | StreetArtist | Loading model weights from submission_weights/resnet34_unet++.pt as it was already trained.
+2024-07-28 15:56:13 | StreetArtist | Training model: resnet50_unet++
+2024-07-28 15:56:13 | StreetArtist | Loading model weights from submission_weights/resnet50_unet++.pt as it was already trained.
+2024-07-28 15:56:14 | StreetArtist | Training model: xception_unet++
+2024-07-28 15:56:14 | StreetArtist | Loading model weights from submission_weights/xception_unet++.pt as it was already trained.
+2024-07-28 15:56:15 | StreetArtist | Training model: efficientnet-b4_unet++
+2024-07-28 15:56:15 | StreetArtist | Loading model weights from submission_weights/efficientnet-b4_unet++-finetuned.pt as it was already finetuned.
+2024-07-28 15:56:15 | UNetEncoder | Freezing encoder weights enc1, enc2
+2024-07-28 15:56:15 | StreetArtist | Training model: resnet50_unet
+2024-07-28 15:56:15 | StreetArtist | Loading model weights from submission_weights/resnet50_unet-finetuned.pt as it was already finetuned.
+2024-07-28 15:56:16 | StreetArtist | Training model: resnet50_deeplabv3+
+2024-07-28 15:56:16 | StreetArtist | Loading model weights from submission_weights/resnet50_deeplabv3+-finetuned.pt as it was already finetuned.
+2024-07-28 15:56:17 | StreetArtist | Skipping finetuning for resnet34_unet++
+2024-07-28 15:56:17 | StreetArtist | Skipping finetuning for resnet50_unet++
+2024-07-28 15:56:17 | StreetArtist | Skipping finetuning for xception_unet++
+2024-07-28 15:56:18 | UNetEncoder | Freezing encoder weights enc1, enc2
+2024-07-28 15:56:22 | StreetArtist | Training model: street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt
+2024-07-28 15:56:22 | StreetArtist | Training for 17 epochs with patience 3.
+2024-07-28 15:56:22 | StreetArtist | Loading model weights from submission_weights/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3.
+2024-07-28 15:56:45 | StreetArtist | Training for 19 epochs with patience 4.
+2024-07-28 16:00:48 | utils | 	- loss = 0.14014518482056054
+  	- val_loss = 0.18376853151453865
+  	- acc = 0.9524944654402842
+  	- val_acc = 0.9359319342507256
+  	- patch_acc = 0.9483772065803295
+  	- val_patch_acc = 0.9277584883901808
+  	- f1 = 0.7881486223626682
+  	- val_f1 = 0.8066627913051181
+  	- patch_f1 = 0.8600450774640528
+  	- val_patch_f1 = 0.8546677033106486
+ 
+2024-07-28 16:00:48 | early_stopping | Best F1 Score increased (0.000000 --> 0.854668).
+2024-07-28 16:00:48 | early_stopping | Saving model to submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3_19_4-0.854668.pt
+2024-07-28 16:04:52 | utils | 	- loss = 0.1132085038960435
+  	- val_loss = 0.18051178587807548
+  	- acc = 0.95575939312236
+  	- val_acc = 0.9347681204477946
+  	- patch_acc = 0.9513060664402619
+  	- val_patch_acc = 0.9234182172351413
+  	- f1 = 0.8008343308936549
+  	- val_f1 = 0.8069940474298265
+  	- patch_f1 = 0.8684357964355527
+  	- val_patch_f1 = 0.8462714221742418
+ 
+2024-07-28 16:04:52 | early_stopping | EarlyStopping counter: 1 out of 4
+2024-07-28 16:08:57 | utils | 	- loss = 0.11524281740359223
+  	- val_loss = 0.1815032942427529
+  	- acc = 0.9544495594410496
+  	- val_acc = 0.9355378349622091
+  	- patch_acc = 0.9505871036125504
+  	- val_patch_acc = 0.9258294767803616
+  	- f1 = 0.7975710525767494
+  	- val_f1 = 0.8057626419597201
+  	- patch_f1 = 0.867235573875995
+  	- val_patch_f1 = 0.8504924575487772
+ 
+2024-07-28 16:08:57 | early_stopping | EarlyStopping counter: 2 out of 4
+2024-07-28 16:13:00 | utils | 	- loss = 0.11524306647906093
+  	- val_loss = 0.17728685422076118
+  	- acc = 0.9550584725296224
+  	- val_acc = 0.9350548386573792
+  	- patch_acc = 0.9509217361457475
+  	- val_patch_acc = 0.9242862727906969
+  	- f1 = 0.7998925745487213
+  	- val_f1 = 0.8055725495020548
+  	- patch_f1 = 0.8679490403364633
+  	- val_patch_f1 = 0.8477695253160265
+ 
+2024-07-28 16:13:00 | early_stopping | EarlyStopping counter: 3 out of 4
+2024-07-28 16:17:04 | utils | 	- loss = 0.10887103415456892
+  	- val_loss = 0.16910873353481293
+  	- acc = 0.9570952176137735
+  	- val_acc = 0.9361097547743056
+  	- patch_acc = 0.9532906654226871
+  	- val_patch_acc = 0.9258294767803616
+  	- f1 = 0.8094445173521988
+  	- val_f1 = 0.8116445938746134
+  	- patch_f1 = 0.8756517167309769
+  	- val_patch_f1 = 0.8525250355402628
+ 
+2024-07-28 16:17:04 | early_stopping | EarlyStopping counter: 4 out of 4
+2024-07-28 16:17:04 | utils | Restoring best checkpoint: submission_checkpoints/street_paintefficientnet-b4_unet++__resnet50_unet__resnet50_deeplabv3+__resnet34_unet++__resnet50_unet++__xception_unet++.pt_17_3_19_4-0.854668.pt with F1 score: 0.8546677033106486 after 4 epochs. Clearing checkpoint...
+2024-07-28 16:17:04 | utils | Finished Training with : 	- loss = 0.10887103415456892
+  	- val_loss = 0.16910873353481293
+  	- acc = 0.9570952176137735
+  	- val_acc = 0.9361097547743056
+  	- patch_acc = 0.9532906654226871
+  	- val_patch_acc = 0.9258294767803616
+  	- f1 = 0.8094445173521988
+  	- val_f1 = 0.8116445938746134
+  	- patch_f1 = 0.8756517167309769
+  	- val_patch_f1 = 0.8525250355402628
+ 

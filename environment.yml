@@ -1,0 +1,27 @@
+name: road-segmentation
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pillow
+  - jupyter
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - seaborn
+  - pytorch
+  - torchvision
+  - tensorboard
+  - cudatoolkit=11.3 # Adjust the CUDA version based on your system and GPU
+  - pip:
+      - jupyterlab
+      - ipywidgets
+      - tqdm
+      - albumentations==1.4.11
+      - loguru
+      - absl-py
+      - segmentation-models-pytorch
